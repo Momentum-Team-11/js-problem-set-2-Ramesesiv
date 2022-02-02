@@ -2,21 +2,77 @@
 // member of the array, and returns a new array with that member removed.
 // For example, `remove(['Cadence', 'Ordel', 'Marion'], 'Marion')` results
 // in `['Cadence', 'Ordel']`.
+
+function remove(Students, name){
+let newArray=[]
+console.log(students)
+for(let student of students){
+if(student !=name){
+newArray.push(student)
+
+
+
+}
+console.log(newArray)
+}
+return newArray
+}
 //
 // If the potential member is not in the array, return the array unchanged.
 // If the potential member is in the array, remove all instances of it from the array.
 
 // 2. Revisit your "remove" function. Make sure that it does not change the original
 // array but instead returns a new array.
+function remove(array){
+let newArray=[]
+console.log(students)
+for(let student of students){
+    if(student !=name){
+newArray.push(student)
 
+    }console.log(newArray)
+
+
+}
+
+}
 // 3. Create a function called "sum" that takes an array of numbers and
 // returns the sum of those numbers.
 
 // 4. Create a function called "average" that takes an array of numbers
 // and returns the average of those numbers.
+function average(numbers) {
+    let average = 0
+    for (let number of numbers) {
+    return average = sum(numbers) / numbers.length
+    }
+    }
 
 // 5. Create a function called "minimum" that takes an array of numbers and
 // returns the smallest number in that array.
+console.log("QUESTION ######FIVE#############") 
+
+
+/*function minimum(array){
+let minimum= array.length
+    for(let number of numbers){
+    return console.log(Math.min.apply(null,...array))
+    
+}
+
+
+ }
+ */
+// Tyler's method
+ function minimum (numbers) {
+    if (numbers.length == 0) {
+        return
+    }
+    else {
+        return Math.min.apply(null, numbers)
+    }
+    
+}
 
 // 6. There are many techniques to sort arrays in programming. Your programming
 // language will likely include the ability to do this. We are going to
